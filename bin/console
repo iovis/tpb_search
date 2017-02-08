@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "tpb_search"
+require 'factory_girl'
+
+include FactoryGirl::Syntax::Methods
+FactoryGirl.find_definitions
+
+# search = build :search, search: 'silicon valley s03e08'
+search = build :search
+
+require 'pry'
+Pry.start
+
